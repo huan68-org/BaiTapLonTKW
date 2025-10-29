@@ -1,0 +1,438 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+/* Header */
+header {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.drinks-section {
+  background-color: url(./images/nenVangSang\(2\).png);
+}
+.header-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.logo {
+  font-family: "Georgia", serif;
+  font-size: 24px;
+  color: #8b4513;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  flex: 0 0 auto;
+  margin-left: 0;
+}
+nav {
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 6px 2px; /* increase clickable area slightly */
+}
+nav a:hover {
+  color: #8b4513;
+}
+nav a.active {
+  color: #8b4513;
+  font-weight: 700;
+}
+.social-icons {
+  display: flex;
+  gap: 18px; /* slightly larger gap */
+  flex: 0 0 auto;
+  margin-right: 0; /* ensure flush to right of container */
+  list-style: none;
+}
+.social-icons a {
+  color: #333;
+  font-size: 16px;
+  width: 28px;
+  height: 28px;
+}
+.social-icons a:hover {
+  color: #8b4513;
+}
+
+/* Drinks section styles */
+.drinks-section {
+  padding: 56px 0 80px;
+  background-image: url("./images/nenVangSang(2).png");
+  border-bottom: #111 solid 3px;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.post-meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+}
+.author-info .author-name {
+  font-weight: 700;
+  font-size: 14px;
+}
+.author-info .post-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.post-stats {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #666;
+}
+.post-stats li {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.post-stats i {
+  color: #8b4513;
+}
+.post-stats strong {
+  margin-left: 6px;
+  color: #222;
+  font-weight: 700;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card {
+  background: #e8f8fb; /* pale cyan similar to screenshot */
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.profile-card h3 {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+}
+.profile-list {
+  list-style: none;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+.profile-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+.profile-list .label {
+  color: #6b6b6b;
+  font-size: 13px;
+}
+.profile-list .value {
+  font-weight: 700;
+  color: #222;
+}
+.profile-bio {
+  font-size: 13px;
+  color: #4d4d4d;
+  line-height: 1.4;
+  margin: 8px 0 0 0;
+}
+
+/* Cocktail signature section (improved) */
+.cocktail-signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cocktail-signature .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.cocktail-header {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+.cocktail-lead {
+  max-width: 760px;
+  color: #6b6b6b;
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+.cocktail-title {
+  font-size: 34px;
+  margin: 0;
+  font-weight: 700;
+  color: #111;
+}
+.btn-discover {
+  background: #e8f8fb;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  color: #0b3a3a;
+  font-weight: 600;
+  align-self: center;
+}
+
+ul.cocktail-cards {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 18px 0;
+  margin: 18px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cocktail-card {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(232, 248, 251, 0.45) 100%
+  );
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.card-media {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: transparent;
+}
+.card-media img {
+  max-width: 76px;
+  max-height: 76px;
+  object-fit: contain;
+  display: block;
+}
+.card-title {
+  font-size: 13px;
+  color: #222;
+  text-align: center;
+}
+
+/* make last card taller if image is tall (blueberry bottle) */
+.cocktail-card:last-child .card-media img {
+  max-height: 92px;
+}
+
+/* Article Main Content (updated to match screenshot) */
+.article-main {
+  width: 100%;
+}
+.view-reference {
+  padding: 20px 20px 0 20px;
+}
+.view-reference img {
+  width: 100%;
+}
+.comment {
+  width: 80%;
+  margin-left: 90px;
+}
+.first-comment {
+  padding: 15px 0 50px 0;
+  border-bottom: 1px solid #cdd7d8;
+}
+.second-comment,
+.third-comment {
+  border-bottom: 1px solid #cdd7d8;
+  padding: 40px 0px 50px 0px;
+}
+.img-view {
+  padding: 20px;
+}
+.img-view img {
+  width: 100%;
+}
+
+/* Food Cards Section */
+.food-cards {
+  display: flex;
+  width: 100%;
+}
+.menu-pairing {
+  width: 100%;
+  text-align: center;
+}
+.menu-pairing ul {
+  list-style: none;
+}
+.pairing-title {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 20px;
+}
+.food-card {
+  width: 100%;
+  padding: 10px 20px 10px 0px;
+}
+
+.meta-item {
+  font-size: 13px;
+  padding-right: 10px;
+}
+.card-media {
+  width: 100%;
+  border: 1px solid #e8f8fb;
+  background-color: #eff4f5;
+}
+.card-media:hover {
+  background-color: #b7c6c6;
+}
+
+.card-media img {
+  max-width: 100%;
+  height: auto;
+}
+.card-name {
+  text-align: center;
+}
+.card-meta {
+  margin: 30px 0;
+}
+
+/* Footer styles */
+.logo {
+  font-family: "Georgia", serif;
+  font-size: 24px;
+  color: #8b4513;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  flex: 0 0 auto; /* don't grow */
+  margin-left: 0;
+}
+.container-footer-top {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-nav a {
+  padding: 20px;
+}
+.footer-desc {
+  margin-bottom: 30px;
+}
+/* Footer layout and positioning */
+.footer-top {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 20px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* brand left, nav right */
+  gap: 20px;
+}
+.footer-bottom {
+  border-top: 2px solid #ddd8d8;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0 100px 0;
+}
+.copyright {
+  text-align: center;
+  width: 100%;
+}
+.copyright p {
+  text-align: center;
+}
+.copyright a {
+  text-decoration: none;
+  color: #8b4513;
+}
+
+.footer-social {
+  display: flex;
+}
+.footer-social a {
+  padding: 0 15px;
+  color: #222;
+}
+.footer-social a:hover {
+  color: #8b4513;
+}

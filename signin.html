@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Four Talented Men</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left: Form -->
+        <div class="form-side">
+            <div class="form-box">
+                <div class="logo">
+                    <i class="fas fa-crown"></i>
+                    <span>Four Talented Men</span>
+                </div>
+
+                <h1>Create Account</h1>
+                <p class="subtitle">Already have an account? <a href="login.html">Sign in</a></p>
+
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <small class="hint">Mật khẩu phải có ít nhất 6 ký tự</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required minlength="6">
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>I agree to the <a href="#" target="_blank">Terms & Conditions</a></span>
+                    </label>
+
+                    <button type="submit" class="btn-primary">
+                        Create Account <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="divider">Or continue with</div>
+
+                <div class="social-btns">
+                    <button class="social-btn" data-platform="google" type="button">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button class="social-btn" data-platform="facebook" type="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="social-btn" data-platform="apple" type="button">
+                        <i class="fab fa-apple"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Video -->
+        <div class="video-side">
+            <video autoplay muted loop playsinline>
+                <source src="./movie/hotel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <h2>Join Our Community</h2>
+                <p>Được thành lập bởi Công Huân, Hải Đăng, Hoàng Trung và Thế Anh</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/login.js"></script>
+    
+    <script>
+        // Kiểm tra nếu đã đăng nhập thì chuyển về PageOne
+        window.addEventListener('DOMContentLoaded', function() {
+            const currentUser = localStorage.getItem('currentUser');
+            if (currentUser) {
+                const user = JSON.parse(currentUser);
+                if (user.loggedIn) {
+                    window.location.href = 'PageOne.html';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

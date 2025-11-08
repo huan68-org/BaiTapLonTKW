@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Four Talented Men - Cocktail Menu">
+    <title>Cocktail Menu - Four Talented Men</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/PageTwo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Four Talented Men</div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="PageOne.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#cocktail" class="nav-link active">Cocktail</a></li>
+                        <li class="nav-item"><a href="PageThree.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="PageFour.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-icons">
+                    <a href="checkout.html" class="social-link cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="order-count">0</span>
+                    </a>
+                    <button class="social-link logout-btn" title="Đăng xuất">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="cocktail-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">Premium Collection</span>
+                    <h1 class="hero-title">Signature Cocktails</h1>
+                    <p class="hero-description">Khám phá bộ sưu tập cocktail độc đáo được pha chế bởi bartender chuyên nghiệp với hơn 15 năm kinh nghiệm</p>
+                    <button class="btn-primary">
+                        Explore Menu
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <video autoplay loop muted playsinline>
+                        <source src="./movie/video(3).mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cocktail-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cocktail Categories</h2>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cocktail"></i>
+                    </div>
+                    <h3 class="category-name">Classic</h3>
+                    <p class="category-count">12 drinks</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-glass-martini-alt"></i>
+                    </div>
+                    <h3 class="category-name">Signature</h3>
+                    <p class="category-count">8 drinks</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-wine-glass"></i>
+                    </div>
+                    <h3 class="category-name">Tropical</h3>
+                    <p class="category-count">10 drinks</p>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <h3 class="category-name">Premium</h3>
+                    <p class="category-count">6 drinks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cocktail-menu">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title">Our Special Menu</h2>
+                <p class="section-description">Được pha chế từ nguyên liệu cao cấp và công thức độc quyền</p>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/ClassicMojitobg2.png" alt="Mojito">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Classic Mojito</h3>
+                        <p class="card-description">Rum trắng, bạc hà tươi, đường, chanh, soda</p>
+                        <div class="card-footer">
+                            <span class="card-price">150.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/FrozenMargaritabg2.png" alt="Margarita">
+                        <span class="card-badge">New</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Frozen Margarita</h3>
+                        <p class="card-description">Tequila, triple sec, nước chanh, muối</p>
+                        <div class="card-footer">
+                            <span class="card-price">180.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/PiñaColada.png" alt="Piña Colada">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Piña Colada</h3>
+                        <p class="card-description">Rum trắng, nước dừa, nước dứa, kem tươi</p>
+                        <div class="card-footer">
+                            <span class="card-price">160.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/Cosmopolitan.png" alt="Cosmopolitan">
+                        <span class="card-badge">Signature</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cosmopolitan</h3>
+                        <p class="card-description">Vodka, triple sec, nước chanh, nước cranberry</p>
+                        <div class="card-footer">
+                            <span class="card-price">170.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/OldFashioned.png" alt="Old Fashioned">
+                        <span class="card-badge">Premium</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Old Fashioned</h3>
+                        <p class="card-description">Bourbon whiskey, đường, angostura bitters</p>
+                        <div class="card-footer">
+                            <span class="card-price">200.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/Negroni.png" alt="Negroni">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Negroni</h3>
+                        <p class="card-description">Gin, Campari, vermouth đỏ</p>
+                        <div class="card-footer">
+                            <span class="card-price">190.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/Daiquiri.png" alt="Daiquiri">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Strawberry Daiquiri</h3>
+                        <p class="card-description">Rum trắng, dâu tây tươi, nước chanh, đường</p>
+                        <div class="card-footer">
+                            <span class="card-price">165.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/AperolSpritz.png" alt="Aperol Spritz">
+                        <span class="card-badge">New</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Aperol Spritz</h3>
+                        <p class="card-description">Aperol, prosecco, soda, cam</p>
+                        <div class="card-footer">
+                            <span class="card-price">175.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cocktail-card">
+                    <div class="card-image">
+                        <img src="./drinks/MaiTai.png" alt="Mai Tai">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mai Tai</h3>
+                        <p class="card-description">Rum, curaçao cam, orgeat, nước chanh</p>
+                        <div class="card-footer">
+                            <span class="card-price">185.000đ</span>
+                            <button class="btn-add">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bartender-section">
+        <div class="container">
+            <div class="bartender-wrapper">
+                <div class="bartender-image">
+                    <img src="./images/theAnh.png" alt="Professional Bartender">
+                    <div class="bartender-badge">
+                        <i class="fas fa-award"></i>
+                        <div class="badge-text">
+                            <span class="badge-title">15+ Years</span>
+                            <span class="badge-subtitle">Experience</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bartender-content">
+                    <span class="section-label">Meet Our Expert</span>
+                    <h2 class="bartender-title">Bartender chuyên nghiệp với hơn 15 năm kinh nghiệm</h2>
+                    <p class="bartender-description">Được đào tạo tại các trường bartending hàng đầu thế giới và từng làm việc tại nhiều bar nổi tiếng quốc tế. Chuyên gia trong việc pha chế các loại cocktail cổ điển và sáng tạo công thức mới độc đáo.</p>
+                    
+                    <div class="bartender-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Cocktail Recipes</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Awards Won</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-description">Những đánh giá chân thực từ khách hàng của chúng tôi</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Cocktail ở đây thật sự tuyệt vời! Bartender rất chuyên nghiệp và nhiệt tình. Mình đã thử nhiều loại và đều rất ngon."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Customer 1">
+                        <div class="author-info">
+                            <h4 class="author-name">Nguyễn Văn A</h4>
+                            <p class="author-role">Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Không gian sang trọng, đồ uống chất lượng cao. Đặc biệt là các cocktail signature rất độc đáo và ngon miệng."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Customer 2">
+                        <div class="author-info">
+                            <h4 class="author-name">Trần Thị B</h4>
+                            <p class="author-role">VIP Member</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Giá cả hợp lý, chất lượng tuyệt vời. Đây là nơi mình thường đến để thư giãn sau giờ làm việc."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Customer 3">
+                        <div class="author-info">
+                            <h4 class="author-name">Lê Văn C</h4>
+                            <p class="author-role">Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-content">
+                    <span class="section-label">Book Your Table</span>
+                    <h2 class="reservation-title">Đặt bàn ngay hôm nay</h2>
+                    <p class="reservation-description">Liên hệ với chúng tôi để đặt bàn và trải nghiệm những cocktail tuyệt vời nhất</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+84 123 456 789</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">info@fourtalentedmen.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">123 Nguyễn Huệ, Q.1, TP.HCM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reservation-form-wrapper">
+                    <form class="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" required>
+                                <option value="">Select guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5+ People</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" rows="4" placeholder="Any special requests..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            Book Now
+                            <i class="fas fa-calendar-check"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">Four Talented Men<span>.</span></h2>
+                    <p class="footer-description">Discover delicious recipes and culinary inspiration for every occasion. From classic comfort food to exotic international cuisine.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="PageOne.html">Home</a></li>
+                            <li><a href="PageTwo.html">Cocktails</a></li>
+                            <li><a href="#recipes">Recipes</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#about">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#breakfast">Breakfast</a></li>
+                            <li><a href="#lunch">Lunch</a></li>
+                            <li><a href="#dinner">Dinner</a></li>
+                            <li><a href="#dessert">Dessert</a></li>
+                            <li><a href="#drinks">Drinks</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#support">Support</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                            <li><a href="#sitemap">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to get special offers, recipes, and news.</p>
+                        <form class="footer-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 <strong>Four Talented Men</strong>. All rights reserved. Crafted with <i class="fas fa-heart"></i> by Professional Team</p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy</a>
+                        <span class="separator">•</span>
+                        <a href="#terms">Terms</a>
+                        <span class="separator">•</span>
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-header">
+            <h3 class="cart-title">
+                <i class="fas fa-shopping-bag"></i>
+                Giỏ Hàng Của Bạn
+            </h3>
+            <button class="cart-close-btn" aria-label="Đóng giỏ hàng">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-body">
+            <ul class="cart-items-list">
+                </ul>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span class="total-label">Tổng Cộng:</span>
+                <span class="total-price" id="cart-total-price">0₫</span>
+            </div>
+            <div class="cart-actions">
+                <button class="btn-clear-cart">
+                    <i class="fas fa-trash-alt"></i>
+                    Xóa tất cả
+                </button>
+                <button class="btn-checkout btn-primary">
+                    <i class="fas fa-credit-card"></i>
+                    Thanh Toán
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/PageTwo.js"></script>
+</body>
+</html>

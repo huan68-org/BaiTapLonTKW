@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Bàn - Four Talented Men</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/PageFour.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Four Talented Men</div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="PageOne.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="PageTwo.html" class="nav-link">Cocktail</a></li>
+                        <li class="nav-item"><a href="PageThree.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="PageFour.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/171Dg3yXVg/?mibextid=wwXIfr" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_conghuan0710_?igsh=MXJ4MG9ncGZkeTBoNQ%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <button class="social-link logout-btn" title="Đăng xuất">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-intro">
+                <h1 class="section-title">Đặt Bàn Ngay</h1>
+                <p class="section-description">Vui lòng điền thông tin bên dưới để giữ chỗ. Chúng tôi sẽ gọi điện xác nhận.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-image">
+                    <img src="./images/AnhDangDepTrai.jpg" alt="Đặt bàn">
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" placeholder="Nhập họ tên của bạn..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại *</label>
+                            <input type="tel" id="phone" placeholder="Nhập số điện thoại..." required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-date">Ngày đặt bàn *</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="Nhập email của bạn..." required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-time">Giờ đặt bàn *</label>
+                            <select id="booking-time" required>
+                                <option value="">Chọn giờ...</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Số khách *</label>
+                            <select id="guests" required>
+                                <option value="">Chọn số khách...</option>
+                                <option value="1">1 người</option>
+                                <option value="2">2 người</option>
+                                <option value="3">3 người</option>
+                                <option value="4">4 người</option>
+                                <option value="5">5 người</option>
+                                <option value="6+">6+ người</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Ghi chú đặc biệt</label>
+                        <textarea id="message" rows="5" placeholder="Yêu cầu đặc biệt, dị ứng, vị trí ngồi..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Đặt Bàn Ngay
+                        <i class="fas fa-calendar-check"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="info-title">Địa chỉ</h3>
+                    <p class="info-text">Số 5 Duy Tân<br>Khu đô thị Tuệ Tĩnh, Hải Dương</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="info-title">Điện thoại</h3>
+                    <p class="info-text">+84 123 456 789<br>+84 987 654 321</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="info-title">Email</h3>
+                    <p class="info-text">hihi</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="info-title">Giờ mở cửa</h3>
+                    <p class="info-text">T2-T6: 10:00 - 22:00<br>T7-CN: 09:00 - 23:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Four Talented Men</h3>
+                    <p class="footer-description">Thiên đường ẩm thực - Đam mê</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/share/171Dg3yXVg/?mibextid=wwXIfr" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_conghuan0710_?igsh=MXJ4MG9ncGZkeTBoNQ%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="PageOne.html">Trang chủ</a></li>
+                        <li><a href="PageTwo.html">Cocktail</a></li>
+                        <li><a href="PageThree.html">Blog</a></li>
+                        <li><a href="PageFour.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liên hệ</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@fourtalentedmen.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh, Việt Nam</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Giờ mở cửa</h4>
+                    <ul class="footer-hours">
+                        <li>Thứ 2 - Thứ 6: 10:00 - 22:00</li>
+                        <li>Thứ 7 - CN: 09:00 - 23:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Four Talented Men. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/login.js"></script>
+    
+    <script>
+        // === SCRIPT MỚI ĐỂ XỬ LÝ FORM ĐẶT BÀN ===
+
+        // Set ngày tối thiểu cho ô "Ngày đặt" là hôm nay
+        const today = new Date().toISOString().split('T')[0];
+        const bookingDateInput = document.getElementById('booking-date');
+        if (bookingDateInput) {
+            bookingDateInput.min = today;
+            bookingDateInput.value = today;
+        }
+
+        // Xử lý form đặt bàn
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Lấy giá trị từ các trường mới
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const bookingDate = document.getElementById('booking-date').value;
+            const bookingTime = document.getElementById('booking-time').value;
+            const guests = document.getElementById('guests').value;
+            const message = document.getElementById('message').value;
+
+            // Kiểm tra validation đơn giản (HTML 'required' đã xử lý)
+            if (!name || !email || !phone || !bookingDate || !bookingTime || !guests) {
+                alert('Vui lòng điền đầy đủ các trường bắt buộc (*)');
+                return;
+            }
+            
+            // Gom dữ liệu (để gửi đi hoặc lưu lại)
+            const reservationData = {
+                name: name,
+                email: email,
+                phone: phone,
+                date: bookingDate,
+                time: bookingTime,
+                guests: guests,
+                note: message
+            };
+
+            // Tùy chọn: Log ra console để kiểm tra
+            console.log("Đã ghi nhận đặt bàn:", reservationData);
+            
+            // (Bạn có thể lưu vào localStorage nếu muốn)
+            // const reservations = JSON.parse(localStorage.getItem('reservations') || '[]');
+            // reservations.push(reservationData);
+            // localStorage.setItem('reservations', JSON.stringify(reservations));
+
+            // Hiển thị thông báo thành công
+            alert('Đặt bàn thành công! Chúng tôi sẽ gọi điện để xác nhận. Cảm ơn bạn!');
+            
+            // Reset form
+            this.reset();
+            // Set lại ngày về hôm nay sau khi reset
+            document.getElementById('booking-date').value = today;
+        });
+
+        // (Script logout từ file login.js của bạn vẫn sẽ chạy)
+    </script>
+</body>
+</html>

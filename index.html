@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Talented Men - Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .loader-container {
+            text-align: center;
+            color: white;
+        }
+        
+        .loader {
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 5px solid white;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+        <h2>Four Talented Men</h2>
+        <p>Đang chuyển hướng...</p>
+    </div>
+
+    <script>
+        // Kiểm tra đăng nhập và chuyển hướng
+        window.addEventListener('DOMContentLoaded', function() {
+            const currentUser = localStorage.getItem('currentUser');
+            
+            setTimeout(function() {
+                if (currentUser) {
+                    const user = JSON.parse(currentUser);
+                    if (user.loggedIn) {
+                        console.log('✅ User đã đăng nhập:', user.fullName || user.email);
+                        window.location.href = 'PageOne.html';
+                    } else {
+                        console.log('❌ User chưa đăng nhập');
+                        window.location.href = 'signin.html';
+                    }
+                } else {
+                    console.log('❌ Không tìm thấy thông tin user');
+                    window.location.href = 'signin.html';
+                }
+            }, 500); // Delay 0.5s để hiển thị loading
+        });
+    </script>
+</body>
+</html>

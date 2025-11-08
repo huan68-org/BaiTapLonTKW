@@ -1,0 +1,418 @@
+/* ===================================
+   full-menu.css
+   Styles cho trang thực đơn
+   =================================== */
+
+/* (Biến CSS và các style chung nên được import từ PageOne.css) */
+/* Bạn có thể copy các biến :root từ PageOne.css vào đây nếu cần */
+:root {
+    --primary-color: #FF6B6B; /* (Lấy ví dụ màu từ file cũ) */
+    --dark-color: #2C3E50;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #F8F9FA;
+    --bg-white: #FFFFFF;
+    --border-color: #E0E0E0;
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --radius-lg: 16px;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    --transition-normal: 0.3s ease;
+}
+
+/* 1. Tiêu đề trang */
+.menu-hero {
+    background: linear-gradient(135deg, #FFF5F5 0%, #F0F9FF 100%);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.menu-title {
+    font-family: var(--font-secondary);
+    font-size: 48px;
+    color: var(--dark-color);
+    margin-bottom: 16px;
+}
+
+.menu-subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+/* 2. Thanh lọc danh mục */
+.menu-filters {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky; /* Giữ thanh lọc khi cuộn */
+    top: 80px; /* (Giả sử header cao 80px) */
+    z-index: 900;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.filter-link {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: var(--transition-normal);
+}
+
+.filter-link:hover,
+.filter-link.active {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+}
+
+/* 3. Vùng chứa menu */
+.menu-container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.menu-section {
+    padding-top: 40px; /* Tạo khoảng đệm cho sticky nav */
+    margin-bottom: 40px;
+}
+
+.menu-section .section-title {
+    font-family: var(--font-secondary);
+    font-size: 36px;
+    color: var(--dark-color);
+    margin-bottom: 32px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+/* 4. Lưới các món ăn */
+.menu-grid {
+    display: grid;
+    /* Tự động chia cột, mỗi cột tối thiểu 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/* 5. Thẻ món ăn (Card) */
+.menu-item-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+.menu-item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.item-image {
+    width: 100%;
+    height: 200px; /* Đặt chiều cao cố định cho ảnh */
+    overflow: hidden;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh mà không bị méo */
+}
+
+.item-content {
+    padding: 20px;
+}
+
+.item-name {
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.item-description {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    line-height: 1.5;
+    /* Giới hạn 2 dòng */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+    text-align: right;
+}
+/* ===================================
+   CSS THÊM VÀO CHO GIỎ HÀNG
+   (Dán vào cuối file full-menu.css)
+   =================================== */
+
+/* 1. Style cho nút "Thêm" và giá */
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.btn-add-item {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-color), #FF8787);
+    color: var(--bg-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-normal);
+    cursor: pointer;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-add-item:hover {
+    transform: scale(1.1) rotate(90deg);
+    box-shadow: var(--shadow-md);
+}
+
+/* Nút khi đã thêm (giống PageTwo.js) */
+.btn-add-item.added {
+    background: #28A745; /* var(--success-color) */
+}
+
+.btn-quantity-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--bg-white);
+    color: #28A745;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 2. Style cho Icon Giỏ hàng (Copy từ PageTwo.css) */
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#order-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary-color);
+    color: var(--bg-white);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 50%;
+    display: none;
+    pointer-events: none;
+    z-index: 10;
+    min-width: 18px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#order-count.active {
+    display: block;
+    animation: bounceIn 0.3s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* 3. Style cho Modal Giỏ hàng (Copy từ PageTwo.css) */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-md);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform var(--transition-normal);
+}
+
+.cart-modal.active { /* Đảm bảo class này khớp với JS */
+    transform: translateX(0);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-light); 
+}
+
+.cart-title {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.cart-close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-light);
+    font-size: 20px;
+    padding: 8px;
+    transition: var(--transition-normal);
+}
+
+.cart-close-btn:hover {
+    color: var(--primary-color);
+    transform: rotate(90deg);
+}
+
+.cart-body {
+    flex-grow: 1; 
+    overflow-y: auto;
+    padding: 24px 32px;
+}
+
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-footer {
+    padding: 32px;
+    border-top: 2px solid var(--primary-color);
+    background-color: var(--bg-light);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.total-price {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cart-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-clear-cart {
+    flex: 1;
+    padding: 16px;
+    background-color: var(--border-color);
+    color: var(--dark-color);
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.btn-clear-cart:hover {
+    background-color: var(--dark-color);
+    color: var(--bg-white);
+}
+
+.btn-checkout {
+    flex: 2;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 12px;
+    /* Kế thừa style từ .btn-primary */
+    background: linear-gradient(135deg, var(--primary-color), #FF8787);
+    color: var(--bg-white);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-checkout:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* 4. Style cho Toast (Copy từ PageTwo.css) */
+.toast-notification {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: var(--bg-white);
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 10000;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    min-width: 280px;
+}
+
+.toast-notification.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toast-notification i {
+    font-size: 20px;
+}
+.toast-success i { color: #28A745; }
+.toast-error i { color: #DC3545; }
+.toast-warning i { color: #FFC107; }
+.toast-info i { color: #17A2B8; }

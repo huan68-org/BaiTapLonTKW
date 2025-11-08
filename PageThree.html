@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Article - Four Talented Men</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/PageThree.css">
+</head>
+<body>
+    <!-- HEADER THỐNG NHẤT -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Four Talented Men</div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="PageOne.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="PageTwo.html" class="nav-link">Cocktail</a></li>
+                        <li class="nav-item"><a href="PageThree.html" class="nav-link active">Blog</a></li>
+                        <li class="nav-item"><a href="PageFour.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/171Dg3yXVg/?mibextid=wwXIfr" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_conghuan0710_?igsh=MXJ4MG9ncGZkeTBoNQ%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <button class="social-link logout-btn" title="Đăng xuất">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Blog & Article</h1>
+            <p class="hero-description">Khám phá những câu chuyện ẩm thực và bí quyết nấu ăn từ các chuyên gia</p>
+            
+            <form class="search-bar">
+                <input type="search" placeholder="Tìm kiếm bài viết...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bài viết mới nhất</h2>
+                <a href="#" class="link-view-all">Xem tất cả</a>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./blog/blog1.png" alt="Blog 1">
+                        <span class="blog-badge">Ẩm thực</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 15/10/2024</span>
+                            <span><i class="far fa-user"></i> Huan Dragon</span>
+                        </div>
+                        <h3 class="blog-title">Bí quyết pha chế cocktail hoàn hảo</h3>
+                        <p class="blog-excerpt">Khám phá những kỹ thuật pha chế cocktail chuyên nghiệp từ bartender 5 sao...</p>
+                        <a href="https://vietblend.vn/lam-nao-de-pha-che-cocktail-dung-cach/" class="btn-read-more">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./blog/blog2.png" alt="Blog 2">
+                        <span class="blog-badge">Công thức</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 12/10/2024</span>
+                            <span><i class="far fa-user"></i> Chef Huân</span>
+                        </div>
+                        <h3 class="blog-title">10 món ăn Việt Nam nổi tiếng thế giới</h3>
+                        <p class="blog-excerpt">Tìm hiểu về những món ăn Việt Nam được yêu thích nhất trên toàn cầu...</p>
+                        <a href="https://vtcnews.vn/nhung-mon-an-viet-nam-duoc-the-gioi-vinh-danh-ar864214.html" class="btn-read-more">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./blog/blog3.png" alt="Blog 3">
+                        <span class="blog-badge">Mẹo hay</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 10/10/2024</span>
+                            <span><i class="far fa-user"></i> Master Chef</span>
+                        </div>
+                        <h3 class="blog-title">Cách chọn nguyên liệu tươi ngon</h3>
+                        <p class="blog-excerpt">Hướng dẫn chi tiết cách nhận biết và lựa chọn nguyên liệu chất lượng cao...</p>
+                        <a href="https://www.aeon.com.vn/cam-nang-aeon/bi-kip-mua-sam/cach-lua-chon-thuc-pham-tuoi-song.html" class="btn-read-more">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 4 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./blog/blog4.png" alt="Blog 4">
+                        <span class="blog-badge">Xu hướng</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 08/10/2024</span>
+                            <span><i class="far fa-user"></i> Food Blogger</span>
+                        </div>
+                        <h3 class="blog-title">Xu hướng ẩm thực 2024</h3>
+                        <p class="blog-excerpt">Những xu hướng ẩm thực đang làm mưa làm gió trong năm nay...</p>
+                        <a href="https://dulichsaigon.edu.vn/xu-huong-am-thuc/" class="btn-read-more">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 5 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./blog/blog5.png" alt="Blog 5">
+                        <span class="blog-badge">Dinh dưỡng</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 05/10/2024</span>
+                            <span><i class="far fa-user"></i> Nutritionist</span>
+                        </div>
+                        <h3 class="blog-title">Ăn uống lành mạnh mỗi ngày</h3>
+                        <p class="blog-excerpt">Xây dựng thực đơn dinh dưỡng cân bằng cho cả gia đình...</p>
+                        <a href="https://www.vinmec.com/vie/bai-viet/cach-xay-dung-mot-che-do-uong-lanh-manh-can-bang-vi" class="btn-read-more">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 6 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="./blog/blog6.png" alt="Blog 6">
+                        <span class="blog-badge">Văn hóa</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 01/10/2024</span>
+                            <span><i class="far fa-user"></i> Culture Writer</span>
+                        </div>
+                        <h3 class="blog-title">Văn hóa ẩm thực Á Đông</h3>
+                        <p class="blog-excerpt">Khám phá nét đẹp văn hóa ẩm thực truyền thống châu Á...</p>
+                        <a href="https://baohatinh.vn/tim-hieu-goc-am-thuc-a-dong-post122326.html" class="btn-read-more">
+                            Đọc thêm
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Four Talented Men</h3>
+                    <p class="footer-description">Thiên đường ẩm thực - Đam mê</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/share/171Dg3yXVg/?mibextid=wwXIfr" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_conghuan0710_?igsh=MXJ4MG9ncGZkeTBoNQ%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liên kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="PageOne.html">Trang chủ</a></li>
+                        <li><a href="PageTwo.html">Cocktail</a></li>
+                        <li><a href="PageThree.html">Blog</a></li>
+                        <li><a href="PageFour.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Liên hệ</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@fourtalentedmen.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh, Việt Nam</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Giờ mở cửa</h4>
+                    <ul class="footer-hours">
+                        <li>Thứ 2 - Thứ 6: 10:00 - 22:00</li>
+                        <li>Thứ 7 - CN: 09:00 - 23:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Four Talented Men. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/login.js"></script>
+</body>
+</html>

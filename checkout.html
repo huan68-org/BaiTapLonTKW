@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thanh toán đơn hàng - Four Talented Men">
+    <title>Thanh Toán - Four Talented Men</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Four Talented Men</div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="PageOne.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="PageTwo.html" class="nav-link">Cocktail</a></li>
+                        <li class="nav-item"><a href="PageThree.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="PageFour.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-icons">
+                    <a href="PageTwo.html" class="social-link" title="Quay lại">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <button class="social-link logout-btn" title="Đăng xuất">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="checkout-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="PageTwo.html">
+                    <i class="fas fa-cocktail"></i>
+                    Menu
+                </a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Thanh toán</span>
+            </div>
+
+            <div class="checkout-wrapper">
+                <div class="checkout-form-section">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-file-invoice"></i>
+                            Thông tin đặt hàng
+                        </h2>
+                        <p class="section-subtitle">Vui lòng điền đầy đủ thông tin bên dưới</p>
+                    </div>
+
+                    <form id="checkout-form" class="checkout-form">
+                        <div class="form-section">
+                            <h3 class="form-section-title">
+                                <i class="fas fa-user-circle"></i>
+                                Thông tin khách hàng
+                            </h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullname">
+                                        Họ và tên <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="fullname" 
+                                        name="fullname" 
+                                        required 
+                                        placeholder="Nguyễn Văn A"
+                                        autocomplete="name"
+                                    >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">
+                                        Số điện thoại <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="phone" 
+                                        name="phone" 
+                                        required 
+                                        placeholder="0912345678" 
+                                        pattern="[0-9]{10}"
+                                        autocomplete="tel"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        required 
+                                        placeholder="example@gmail.com"
+                                        autocomplete="email"
+                                    >
+                                </div>
+                            </div>
+
+                            </div>
+
+                        <div class="form-section">
+                            <h3 class="form-section-title">
+                                <i class="fas fa-chair"></i>
+                                Thông tin tại bàn
+                            </h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="table-number">
+                                        Số bàn <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="number" 
+                                        id="table-number" 
+                                        name="table-number" 
+                                        required
+                                        placeholder="Nhập số bàn của bạn"
+                                        min="1"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="note">
+                                    Ghi chú đặc biệt
+                                </label>
+                                <textarea 
+                                    id="note" 
+                                    name="note" 
+                                    rows="4" 
+                                    placeholder="Yêu cầu đặc biệt về món ăn, dị ứng thực phẩm..."
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h3 class="form-section-title">
+                                <i class="fas fa-credit-card"></i>
+                                Phương thức thanh toán
+                            </h3>
+                            
+                            <div class="payment-methods">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="cash" checked>
+                                    <div class="payment-card">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <div class="payment-info">
+                                            <span class="payment-name">Tiền mặt</span>
+                                            <small>Thanh toán tại quầy</small>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="card">
+                                    <div class="payment-card">
+                                        <i class="fas fa-credit-card"></i>
+                                        <div class="payment-info">
+                                            <span class="payment-name">Thẻ tín dụng</span>
+                                            <small>Visa, Mastercard, JCB</small>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="momo">
+                                    <div class="payment-card">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <div class="payment-info">
+                                            <span class="payment-name">Ví MoMo</span>
+                                            <small>Thanh toán qua ví điện tử</small>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="banking">
+                                    <div class="payment-card">
+                                        <i class="fas fa-university"></i>
+                                        <div class="payment-info">
+                                            <span class="payment-name">Chuyển khoản</span>
+                                            <small>Internet Banking</small>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="order-summary-section">
+                    <div class="order-summary-card">
+                        <h3 class="summary-title">
+                            <i class="fas fa-shopping-bag"></i>
+                            Đơn hàng của bạn
+                        </h3>
+
+                        <div class="order-items" id="order-items">
+                            </div>
+
+                        <div class="price-details">
+                            <div class="price-row">
+                                <span>Tạm tính:</span>
+                                <span id="subtotal">0₫</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Phí dịch vụ (5%):</span>
+                                <span id="service-fee">0₫</span>
+                            </div>
+                            <div class="price-row">
+                                <span>VAT (10%):</span>
+                                <span id="vat">0₫</span>
+                            </div>
+                            <div class="price-row total">
+                                <span>Tổng cộng:</span>
+                                <span id="total-price">0₫</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-actions">
+                            <button type="button" class="btn-back" onclick="window.history.back()">
+                                <i class="fas fa-arrow-left"></i>
+                                Quay lại
+                            </button>
+                            <button type="submit" form="checkout-form" class="btn-submit">
+                                <i class="fas fa-check-circle"></i>
+                                Đặt hàng
+                            </button>
+                        </div>
+
+                        <div class="trust-badges">
+                            <div class="badge-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Bảo mật thanh toán</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="fas fa-headset"></i>
+                                <span>Hỗ trợ 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-animation">
+                <div class="checkmark-circle">
+                    <div class="checkmark"></div>
+                </div>
+            </div>
+            <h2 class="success-title">Đặt hàng thành công!</h2>
+            <p class="success-message">
+                Cảm ơn bạn đã đặt hàng tại <strong>Four Talented Men</strong>
+            </p>
+            <div class="order-code-box">
+                <span class="code-label">Mã đơn hàng:</span>
+                <span class="code-value" id="order-code">FTM123456789</span>
+            </div>
+            <p class="success-note">
+                <i class="fas fa-info-circle"></i>
+                Nhân viên sẽ mang món của bạn ra trong giây lát!
+            </p>
+            <div class="success-actions">
+                <button class="btn-secondary" onclick="window.location.href='PageTwo.html'">
+                    <i class="fas fa-cocktail"></i>
+                    Đặt món thêm
+                </button>
+                <button class="btn-primary" onclick="window.location.href='PageOne.html'">
+                    <i class="fas fa-home"></i>
+                    Về trang chủ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="./javascript/checkout.js"></script>
+</body>
+</html>

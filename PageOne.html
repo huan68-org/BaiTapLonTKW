@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Four Talented Men - Nhà hàng cao cấp với đầu bếp 5 sao Michelin">
+    <title>Four Talented Men - Restaurant</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/PageOne.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Four Talented Men</div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="PageTwo.html" class="nav-link">Cocktail</a></li>
+                        <li class="nav-item"><a href="PageThree.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="PageFour.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/171Dg3yXVg/?mibextid=wwXIfr" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_conghuan0710_?igsh=MXJ4MG9ncGZkeTBoNQ%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <button class="social-link logout-btn" title="Đăng xuất">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="./movie/video(2).mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Thiên đường ẩm thực - Đam mê</h1>
+                    <p class="hero-description">Nhà hàng được thành lập bởi siêu chuyên gia giới ẩm thực Nguyễn Vũ Công Huân</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i class="far fa-clock"></i>
+                            <span>30 Minutes</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>4 Portions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-author">
+                        <img src="./images/Huan(1).png" alt="Huan Dragon Nguyen" class="author-avatar">
+                        <div class="author-info">
+                            <h4 class="author-name">Huan Dragon Nguyen</h4>
+                            <p class="author-date">7 October 2006</p>
+                        </div>
+                        <button class="btn-primary">
+                            View Recipes
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="./images/foodbg(1).png" alt="Món ăn đặc sắc">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR DISHES -->
+    <section class="popular-dishes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Những món ăn phổ biến</h2>
+                <a href="full-menu.html" class="link-view-all" id="btn-explore-menu">
+                    Khám phá thêm
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+            
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-icon">
+                        <img src="./images/nuocngotbg1.png" alt="Nước Ngọt">
+                    </div>
+                    <h3 class="dish-name">Nước Ngọt</h3>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-icon">
+                        <img src="./images/vodkabg1.png" alt="Vodka">
+                    </div>
+                    <h3 class="dish-name">Vodka</h3>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-icon">
+                        <img src="./images/bunboHuebg1.png" alt="Bún bò Huế">
+                    </div>
+                    <h3 class="dish-name">Bún bò Huế</h3>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-icon">
+                        <img src="./images/ComTambg1.png" alt="Cơm Tấm">
+                    </div>
+                    <h3 class="dish-name">Cơm Tấm</h3>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-icon">
+                        <img src="./images/vitquaybackinhbg1.png" alt="Vịt Quay Bắc Kinh">
+                    </div>
+                    <h3 class="dish-name">Vịt Quay Bắc Kinh</h3>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-icon">
+                        <img src="./images/SuonNuongbg1.png" alt="Sườn Nướng">
+                    </div>
+                    <h3 class="dish-name">Sườn Nướng</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL DISHES -->
+    <section class="special-dishes">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title">Những đặc sản bạn nên thử</h2>
+                <p class="section-description">Được mọi người yêu thích nhất và được nhiều người dùng chọn để thưởng thức, những đặc sản này không chỉ đơn thuần là món ăn, mà còn là một trải nghiệm ẩm thực đặc biệt.</p>
+            </div>
+            
+            <div class="special-grid">
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/thitchocaobangbg1.png" alt="Thịt chó Cao Bằng">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Thịt chó Cao Bằng - Đặc sản người Tày</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Food</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/bundaumetbg1.png" alt="Bún Đậu mẹt">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bún Đậu mẹt</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Food</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/ComChienHenbg1.png" alt="Cơm chiên Hến">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cơm chiên Hến</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Food</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/thitbehapbg1.png" alt="Thịt bê hấp">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Thịt bê hấp</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Food</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/HaiSanbg1.png" alt="Hải sản tươi ngon">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Hải sản tươi ngon</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Seafood</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-card green-card">
+                    <div class="green-content">
+                        <p class="green-text">Don't forget to eat healthy food</p>
+                        <img src="./images/healthyFoodbg1.png" alt="Healthy food" class="green-image">
+                        <a href="#" class="green-link">www.foodieland.com</a>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/canuongbg1.png" alt="Cá nướng">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cá nướng</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Seafood</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/NemChuaTHbg1.png" alt="Nem chua Thanh Hóa">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nem chua Thanh Hóa</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Food</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="card-image">
+                        <img src="./images/combolaubg1.png" alt="Combo lẩu đa dạng hương vị">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Combo lẩu đa dạng hương vị</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Food</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHEF SECTION -->
+    <section class="chef-section">
+        <div class="container">
+            <div class="chef-wrapper">
+                <div class="chef-content">
+                    <div class="chef-bg">
+                        
+                    </div>
+                    <div class="chef-text">
+                        <span class="chef-label">Đầu Bếp Chuyên Nghiệp</span>
+                        <h2 class="chef-title">Quý vị sẽ được chính tay đầu bếp 5 sao Michelin Công Huân trổ tài</h2>
+                        <p class="chef-description">
+                            Với hơn 15 năm kinh nghiệm trong nghệ thuật ẩm thực cao cấp, 
+                            Chef Công Huấn sẽ mang đến cho bạn những trải nghiệm ẩm thực đẳng cấp quốc tế.
+                        </p>
+                        <div class="chef-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Năm kinh nghiệm</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5⭐</span>
+                                <span class="stat-label">Michelin</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Món ăn</span>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">
+                            <span>Đọc thêm</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chef-image">
+                    <div class="chef-photo-wrapper">
+                        <div class="chef-photo">
+                            <img src="images/CongHuan.png" alt="Chef Công Huấn">
+                            <div class="chef-badge">
+                                <i class="fas fa-award"></i>
+                                <span>5 Star Chef</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- HOT TREND -->
+    <section class="hot-trend">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title">Chúng tôi cũng bán một số đồ ăn "Hot trend" của Châu Âu</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua erat enim ad minim</p>
+            </div>
+            
+            <div class="trend-grid">
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/HoaQuaTrangMiengbg1.png" alt="Tráng miệng hoa quả">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tráng miệng hoa quả đầy tươi mắt</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Healthy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/Bobittetbg1.png" alt="Bò bit tết">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bò bit tết cùng với khoai chiên</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Western</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/ComChienNhatBanbg1.png" alt="Cơm chiên Nhật Bản">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cơm chiên Nhật Bản đầy dinh dưỡng</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Healthy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/BanhTacosbg1.png" alt="Bánh taco">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bánh taco chuẩn vị Mexico</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Eastern</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/GaSotbbqbg1.png" alt="Gà nướng sốt bbq">
+                        <button class="btn-favorite active"><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Gà nướng sốt bbq</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Korean</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/SandWitch.png" alt="Sandwich">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sandwich đủ loại</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Snack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/Saladcahoibg1.png" alt="Salad">
+                        <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Salad thơm ngon tốt cho sức khỏe</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Seafood</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trend-card">
+                    <div class="card-image">
+                        <img src="./images/MyUdonbg1.png" alt="Mì udon">
+                        <button class="btn-favorite active"><i class="fas fa-heart"></i></button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mì udon</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Japanese</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-decoration left">
+                    <img src="./images/RauCubg1.png" alt="Vegetables">
+                </div>
+                
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Nêu cảm nhận về món ăn bạn nhé!!</h2>
+                    <p class="newsletter-description">Nhận xét về món ăn tại Four Talented Men</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address..." required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <div class="newsletter-decoration right">
+                    <img src="./images/HealthyDishbg1.png" alt="Healthy dish">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">Four Talented Men<span>.</span></h2>
+                    <p class="footer-description">Discover delicious recipes and culinary inspiration for every occasion. From classic comfort food to exotic international cuisine.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="PageOne.html">Home</a></li>
+                            <li><a href="PageTwo.html">Cocktails</a></li>
+                            <li><a href="#recipes">Recipes</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#about">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#breakfast">Breakfast</a></li>
+                            <li><a href="#lunch">Lunch</a></li>
+                            <li><a href="#dinner">Dinner</a></li>
+                            <li><a href="#dessert">Dessert</a></li>
+                            <li><a href="#drinks">Drinks</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#support">Support</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                            <li><a href="#sitemap">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to get special offers, recipes, and news.</p>
+                        <form class="footer-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 <strong>Four Talent Men</strong>. All rights reserved. Crafted with <i class="fas fa-heart"></i> by Professional Team</p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy</a>
+                        <span class="separator">•</span>
+                        <a href="#terms">Terms</a>
+                        <span class="separator">•</span>
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script kiểm tra đăng nhập đã có sẵn, chỉ cần sửa lại -->
+    <script>
+        // Kiểm tra đăng nhập khi load trang
+        window.addEventListener('DOMContentLoaded', function() {
+            const currentUser = localStorage.getItem('currentUser');
+            
+            if (!currentUser) {
+                // Chưa đăng nhập - chuyển về trang đăng nhập
+                alert('⚠️ Vui lòng đăng nhập để tiếp tục!');
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Đã đăng nhập - hiển thị thông tin user
+            const user = JSON.parse(currentUser);
+            
+            if (!user.loggedIn) {
+                alert('⚠️ Phiên đăng nhập không hợp lệ!');
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            console.log('✅ Xin chào, ' + (user.fullName || user.email));
+            
+            // Hiển thị tên user trên header (nếu có element)
+            const userNameElement = document.querySelector('.user-name');
+            if (userNameElement) {
+                userNameElement.textContent = user.fullName || user.email;
+            }
+            
+            // Hiển thị avatar với chữ cái đầu
+            const userAvatar = document.querySelector('.user-avatar');
+            if (userAvatar && user.fullName) {
+                userAvatar.textContent = user.fullName.charAt(0).toUpperCase();
+            }
+        });
+        
+        // Xử lý nút Logout
+        function logout() {
+            if (confirm('Bạn có chắc muốn đăng xuất?')) {
+                localStorage.removeItem('currentUser');
+                alert('👋 Đã đăng xuất thành công!');
+                window.location.href = 'login.html';
+            }
+        }
+        
+        // Gắn sự kiện logout cho nút
+        const logoutBtn = document.querySelector('.logout-btn');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                logout();
+            });
+        }
+        
+        // Hoặc nếu có dropdown menu
+        const logoutLink = document.querySelector('a[href*="logout"]');
+        if (logoutLink) {
+            logoutLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                logout();
+            });
+        }
+    </script>
+</body>
+</html>
+
+</body>
+
+</html>
